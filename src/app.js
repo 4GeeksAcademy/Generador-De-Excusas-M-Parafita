@@ -11,13 +11,13 @@ window.onload = function() {
   
   function selector(who,action,what,when) {
     let nuevaExcusa = "";
-    let random = Math.floor(Math.random() * 4);
+    let random = Math.floor(Math.random() * who.length);
     nuevaExcusa += who[random]+" ";
-    random = Math.floor(Math.random() * 4);
+    random = Math.floor(Math.random() * action.length);
     nuevaExcusa += action[random]+" ";
-    random = Math.floor(Math.random() * 4);
+    random = Math.floor(Math.random() * what.length);
     nuevaExcusa += what[random]+" ";
-    random = Math.floor(Math.random() * 4);
+    random = Math.floor(Math.random() * when.length);
     nuevaExcusa += when[random]+" ";
     return nuevaExcusa;
   }
